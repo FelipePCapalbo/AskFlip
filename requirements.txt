@@ -2,3 +2,5 @@ flask
 twilio
 google-genai
 python-dotenv
+pypdf
+langchain-google-genai

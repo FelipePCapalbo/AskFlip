@@ -1,0 +1,3 @@
+- Construir arquivo mestre de parametrização de LLMs;
+- Testar twillio com multiplos acessos, de multiplos usuários;
+- Configurar multiplos agentes extratores;
