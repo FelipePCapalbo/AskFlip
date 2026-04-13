@@ -20,12 +20,9 @@ EXTRACTIONS_DIR = Path(__file__).parent / "Extractions"
 CHATS_DIR.mkdir(exist_ok=True)
 
 SYSTEM_PROMPT = """\
-You are a legal assistant specialized exclusively in family law and divorce proceedings.
-You must always respond in English, regardless of the language used by the user.
-Answer only questions directly related to family law, divorce, or the specific case provided as context.
-If a question falls outside this scope, politely decline and redirect to the case at hand.
-Always be direct and concise. Do not elaborate beyond what is asked.
-The following is the extracted case data you must use as your knowledge base:
+You are a legal assistant for family law and divorce cases. Respond in English only.
+Reason over the case data: infer current stage, what has happened, what is pending, and what comes next — do not just quote entries.
+Decline questions unrelated to family law or the loaded case. Be direct.
 
 {context_json}"""
 
